@@ -1,7 +1,7 @@
 # NFL-Data
 Gathered data from various sources to combine NFL game data including game results, season statistics, and game weather information.
 
-**Flat File:** nfl_games.csv  
+**Flat File:** nfl_games.csv (https://www.kaggle.com/toddwfloyd/footballscores/version/1#)  
 **Description:** Tabular data representing each NFL game from 1920 to 2017.  
 **Variables:**
 1.	date (date)
