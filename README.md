@@ -1,5 +1,5 @@
 # NFL-Data
-Gathered data from various sources to combine NFL game data including game results, season statistics, and game weather information.
+Gathered data from various sources to combine NFL game data including game results, season statistics, and game weather information. This was a term project for a Data Preparation course in Masters of Data Science program.
 
 **Flat File:** nfl_games.csv (https://www.kaggle.com/toddwfloyd/footballscores/version/1#)  
 **Description:** Tabular data representing each NFL game from 1920 to 2017.  
