@@ -1,52 +1,31 @@
-# NFL-Data
-Gathered data from various sources to combine NFL game data including game results, season statistics, and game weather information. This was a term project for a Data Preparation course in Masters of Data Science program.
+# NFL Game Data Cleaning and Merging
 
-**Flat File:** nfl_games.csv (https://www.kaggle.com/toddwfloyd/footballscores/version/1#)  
-**Description:** Tabular data representing each NFL game from 1920 to 2017.  
-**Variables:**
-1.	date (date)
-2.	season (integer) - year
-3.	neutral (binary) – denotes whether it was a neutral site
-4.	playoff (binary) – denotes whether it was a playoff game
-5.	team1 (string) – denotes home team
-6.	team2 (string) – denotes away team
-7.	elo1 (float) – rating for home team
-8.	elo2 (float) – rating for away team
-9.	score1 (integer) – score for home team
-10.	score2 (integer) – score for away team
-11.	result1 (float) – denotes whether home team won, 0.5 denotes tie
+Gathered NFL game data from various sources and merged into one file that includes game results, season statistics, and game weather information.
 
-**Website Data:** https://www.pro-football-reference.com/years/  
-**Description:** Adding the year on to the end of this url leads you to a page holding season statistics for each NFL season from 1920 to 2019, but I will go to 2017 (not including the 2017 season).  
-**Variables to Scrape:**
-1. year - season
-2. team
-3. wins
-4. losses
-5. ties
-6. win loss perc - win loss percentage
-7. points - points scored
-8. points opp - points allowed
-9. points diff - point differential
-10. mov - margin of victory, (point differential / games played)
-11. sos total - strength of schedule using Simple Rating System (SRS)
-12. srs total - Team quality relative to average based on Simple Rating System, (srs = mov + sos = osrs + dsrs)
-13. srs offense - Offense relative to average (osrs)
-14. srs defense - Defense relative to average (dsrs)
+## Description
 
-**API Data:** https://rapidapi.com/awigmore/api/visual-crossing-weather  
-**Description:** This api is able to return historical weather data for a specified period of time and City.  
-**Variables:**  
-1.	City
-2.	Date
-3.	Min Temperature
-4.	Max Temperature
-5.	Wind Speed
-6.	Wind Gust
-7.	Wind Direction
-8.	Precipitation
-9.	Precipitation Cover
-10.	Snow Depth
-11.	Visibility
-12.	Weather Type  
+What is the association between various NFL statistics like passing yards per game, yards allowed per game, etc. and game results? Is there an association between gametime weather and a strong rushing offense winning?
+Is home feild advantage real? To answer these questions, you first need a complete dataset which includes NFL Team statistics for each year, weather data from each game, and game results. In this project I gathered data from
+various sources and merged them into one complete NFL game data set.  
 
+## Data Sources
+
+* [NFL Game Data](https://www.kaggle.com/toddwfloyd/footballscores/version/1#) - A CSV file found on Kaggle containing game details and results.
+* [Pro-Football-Reference](https://www.pro-football-reference.com/years/) - Website used to scrape team statistics data.
+* [Weather API](https://rapidapi.com/awigmore/api/visual-crossing-weather) - An API I used to obtained weather data for each game.
+
+## Contents
+
+* Obtaining and Cleaning Data.ipynb - Notebook where I gathered data from all three sources and cleaned them.
+* Merging Storing Visualizing NFL DataFrames.ipynb - Notebook where I merged all the data, stored the data in a database, and visualized some of the associations.
+* NFL_Games_Stats_Wx_Data.db - Database containing final table
+* NFL_Games_Stats_Wx_Data.xlsx - Excel file containing final table
+
+## Authors
+
+Samuel Sears @ssears219
+
+## Acknowledgments
+
+* [Pro-Football-Reference](https://www.pro-football-reference.com/)
+* [Toff Floyd's Kaggle Dataset](https://www.kaggle.com/toddwfloyd/footballscores/version/1#)
