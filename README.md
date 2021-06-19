@@ -21,6 +21,14 @@ various sources and merged them into one complete NFL game data set.
 * NFL_Games_Stats_Wx_Data.db - Database containing final table
 * NFL_Games_Stats_Wx_Data.xlsx - Excel file containing final table
 
+## Tools
+* Python
+* Sqlite
+* Sqlalchemy
+* Matplotlib
+* Plotnine
+* BeautifulSoup
+
 ## Authors
 
 Samuel Sears @ssears219
