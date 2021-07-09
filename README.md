@@ -2,6 +2,8 @@
 
 Gathered NFL game data from various sources and merged into one file that includes game results, season statistics, and game weather information.
 
+![Football](https://cdn.pixabay.com/photo/2018/07/25/12/55/american-3561339_960_720.jpg?raw=true)
+
 ## Description
 
 What is the association between various NFL statistics like passing yards per game, yards allowed per game, etc. and game results? Is there an association between gametime weather and a strong rushing offense winning?
